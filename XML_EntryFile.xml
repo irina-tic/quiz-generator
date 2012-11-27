@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<exam>
+    <question>
+	<wording>
+	The wording of the exam question
+	</wording>
+    <falseanswer>False Answer</falseanswer>
+	<falseanswer>False Answer</falseanswer>
+	<falseanswer>False Answer</falseanswer>
+	<trueanswer>True Answer</trueanswer>
+	</question>
+	
+	<question>
+	<wording>
+	The wording of the exam question
+	</wording>
+    <falseanswer>False Answer</falseanswer>
+	<falseanswer>False Answer</falseanswer>
+	<falseanswer>False Answer</falseanswer>
+	<trueanswer>True Answer</trueanswer>
+	</question>
+	
+	<question>
+	<wording>
+	The wording of the exam question
+	</wording>
+	</question>
+	.
+	.
+	.
+	.
+	
+</exam>
