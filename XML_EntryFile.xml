@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <exam>
-    <question>
+    <question type = "multiple-choice">
 	<wording>
 	The wording of the exam question
 	</wording>
-    <falseanswer>False Answer</falseanswer>
-	<falseanswer>False Answer</falseanswer>
-	<falseanswer>False Answer</falseanswer>
-	<trueanswer>True Answer</trueanswer>
+    <answer value="false">False Answer</answer>
+	<answer value="false">False Answer</answer>
+	<answer value="false">False Answer</answer>
+	<answer value="true">True Answer</answer>
 	</question>
 	
-	<question>
+	<question type = "multiple-choice">
 	<wording>
 	The wording of the exam question
 	</wording>
-    <falseanswer>False Answer</falseanswer>
-	<falseanswer>False Answer</falseanswer>
-	<falseanswer>False Answer</falseanswer>
-	<trueanswer>True Answer</trueanswer>
+    <answer value="false">False Answer</answer>
+	<answer value="false">False Answer</answer>
+	<answer value="false">False Answer</answer>
+	<answer value="true">True Answer</answer>
 	</question>
 	
-	<question>
+	<question type = "problem">
 	<wording>
 	The wording of the exam question
 	</wording>
