@@ -1,0 +1,17 @@
+package beans;
+
+public class Answer {
+	private String sentence;
+	private boolean isFalse;
+	
+	
+	public Answer(String sentence, boolean isFalse) {
+		super();
+		this.sentence = sentence;
+		this.isFalse = isFalse;
+	}
+	
+	
+	
+	
+}

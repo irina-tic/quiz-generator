@@ -1,0 +1,8 @@
+package input;
+
+public class Parser {
+
+	private List<Question> questions;
+	
+	
+}

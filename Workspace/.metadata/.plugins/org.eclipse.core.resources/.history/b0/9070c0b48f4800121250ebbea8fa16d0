@@ -1,0 +1,20 @@
+package input;
+
+import java.util.List;
+
+import beans.Question;
+
+public class Parser {
+
+	private List<Question> questions;
+
+	public Parser() {
+		
+	}
+	
+	
+	
+	
+	
+	
+}
