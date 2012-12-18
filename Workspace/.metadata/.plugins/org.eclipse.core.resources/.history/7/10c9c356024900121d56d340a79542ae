@@ -1,0 +1,8 @@
+package beans;
+
+public class Exam {
+	private List<Question> questions;
+	
+	
+
+}

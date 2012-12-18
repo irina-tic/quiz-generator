@@ -1,0 +1,128 @@
+package input;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import beans.Question;
+
+public class Parser {
+
+	private List<Question> questions;
+	private File file;
+
+	public Parser(String namefile) {
+
+		questions = new ArrayList<Question>();
+		file = new File(namefile);
+		Document doc = createDocument();
+		parserDocument(doc);
+
+	}
+
+	public List<Question> getQuestions() {
+		return questions;
+	}
+
+	public void setQuestions(List<Question> questions) {
+		this.questions = questions;
+	}
+
+	public File getFile() {
+		return file;
+	}
+
+	public void setFile(File file) {
+		this.file = file;
+	}
+
+	private void parserDocument(Document doc) {
+
+		// To initilize the document as a tree
+		doc.getDocumentElement().normalize();
+
+		// This is our root element, in our document is <exam>
+		System.out.println("Root element "
+				+ doc.getDocumentElement().getNodeName());
+
+		// We divide the documents in different questions
+		NodeList nd = doc.getElementsByTagName("question");
+		System.out.println("Starting to extract information");
+
+		// We start to analyze each <question>
+		for (int i = 0; i < nd.getLength(); i++) {
+
+			// Each node is a <question> tag
+			Node n = nd.item(i);
+			Element node = (Element) n;
+
+			// We differentiate between multiple-choice questions and problem
+			// questions
+			if (n.getNodeType() == Node.ELEMENT_NODE
+					&& node.getAttribute("type").equals("multiple-choice")) {
+				
+				System.out.println("Getting into multiple-choice");
+				
+				// To obtain the wording of the question
+				NodeList wording = node.getElementsByTagName("wording");
+				
+				String sentence = wording.item(0).getChildNodes().getNodeValue();
+				System.out.println(sentence);
+
+				// To obtain the multiple-choices
+				NodeList answer = node.getElementsByTagName("answer");
+				String choice1 = answer.item(0).getNodeValue();
+				String choice2 = answer.item(1).getNodeValue();
+				String choice3 = answer.item(2).getNodeValue();
+				String choice4 = answer.item(3).getNodeValue();
+				System.out.println(choice1);
+				System.out.println(choice2);
+				System.out.println(choice3);
+				System.out.println(choice4);
+				
+				
+
+			}
+
+			if (n.getNodeType() == Node.ELEMENT_NODE
+					&& node.getAttribute("type").equals("problem")) {
+
+				System.out.println("Getting into problem");
+				
+				NodeList wording = node.getElementsByTagName("wording");
+				String sentence = wording.item(0).getNodeValue();
+				System.out.println(sentence);
+				
+
+			}
+
+		}
+
+	}
+
+	private Document createDocument() {
+		Document doc = null;
+		try {
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			doc = dBuilder.parse(file);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+		return doc;
+
+	}
+
+}

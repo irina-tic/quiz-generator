@@ -6,9 +6,9 @@ import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -45,14 +45,106 @@ public class Parser {
 	}
 
 	private void parserDocument(Document doc) {
+
+		// To initilize the document as a tree
 		doc.getDocumentElement().normalize();
-		System.out.println("Root element "+ doc.getDocumentElement().getNodeName());
+
+		// This is our root element, in our document is <exam>
+		System.out.println("Root element "
+				+ doc.getDocumentElement().getNodeName());
+
+		// We divide the documents in different questions
 		NodeList nd = doc.getElementsByTagName("question");
 		System.out.println("Starting to extract information");
-		for(int i = 0; i < nd.getLength();i++){
+
+		// We start to analyze each <question>
+		for (int i = 0; i < nd.getLength(); i++) {
+
+			// Each node is a <question> tag
 			Node n = nd.item(i);
-			
-			
+			Element node = (Element) n;
+
+			// We differentiate between multiple-choice questions and problem
+			// questions
+			if (n.getNodeType() == Node.ELEMENT_NODE
+					&& node.getAttribute("type").equals("multiple-choice")) {
+
+				System.out.println("Getting into multiple-choice");
+
+				// To obtain the WORDING of the question
+				NodeList wording = node.getElementsByTagName("wording");
+
+				// We obtain the father node
+				Element father = (Element) wording.item(0);
+
+				// We obtain the children nodes, in this case we only have 1
+				// child.
+				NodeList children = father.getChildNodes();
+				String sentence = children.item(0).getNodeValue();
+				System.out.println(sentence);
+
+				// To obtain the MULTIPLE-CHOICES
+				NodeList answer = node.getElementsByTagName("answer");
+
+				// CHOICE 1
+
+				// We obtain the father node
+				Element father2 = (Element) answer.item(0);
+
+				// We obtain the children nodes, in this case we only have 1
+				// child.
+				NodeList children2 = father2.getChildNodes();
+				String sentence2 = children2.item(0).getNodeValue();
+				System.out.println(sentence2);
+
+				// CHOICE 2
+
+				// We obtain the father node
+				Element father3 = (Element) answer.item(1);
+
+				// We obtain the children nodes, in this case we only have 1
+				// child.
+				NodeList children3 = father3.getChildNodes();
+				String sentence3 = children3.item(0).getNodeValue();
+				System.out.println(sentence3);
+
+				// CHOICE 3
+
+				// We obtain the father node
+				Element father4 = (Element) answer.item(2);
+
+				// We obtain the children nodes, in this case we only have 1
+				// child.
+				NodeList children4 = father4.getChildNodes();
+				String sentence4 = children4.item(0).getNodeValue();
+				System.out.println(sentence4);
+
+				// CHOICE 4
+
+				// We obtain the father node
+				Element father5 = (Element) answer.item(3);
+
+				// We obtain the children nodes, in this case we only have 1
+				// child.
+				NodeList children5 = father5.getChildNodes();
+				String sentence5 = children5.item(0).getNodeValue();
+				System.out.println(sentence5);
+
+			}
+
+			if (n.getNodeType() == Node.ELEMENT_NODE
+					&& node.getAttribute("type").equals("problem")) {
+
+				System.out.println("Getting into problem");
+
+				NodeList wording = node.getElementsByTagName("wording");
+				Element father = (Element)wording.item(0);
+				NodeList children = father.getChildNodes();
+				String sentence = children.item(0).getNodeValue();
+				System.out.println(sentence);
+
+			}
+
 		}
 
 	}
@@ -64,8 +156,7 @@ public class Parser {
 					.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			doc = dBuilder.parse(file);
-			
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 
