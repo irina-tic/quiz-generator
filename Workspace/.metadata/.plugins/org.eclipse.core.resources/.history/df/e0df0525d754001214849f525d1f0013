@@ -1,0 +1,10 @@
+package output;
+
+import algorithm.ExamGenerator;
+
+public class OutPut {
+	
+	private ExamGenerator exams;
+	
+	
+}

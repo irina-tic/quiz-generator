@@ -12,6 +12,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import beans.Answer;
 import beans.Question;
 
 public class Parser {
@@ -97,6 +98,14 @@ public class Parser {
 				String sentence2 = children2.item(0).getNodeValue();
 				System.out.println(sentence2);
 
+				Answer answer1 = null;
+				if (father2.getAttribute("value").equals("false")) {
+					answer1 = new Answer(sentence2, true);
+				} else {
+					answer1 = new Answer(sentence2, false);
+				}
+
+
 				// CHOICE 2
 
 				// We obtain the father node
@@ -108,6 +117,13 @@ public class Parser {
 				String sentence3 = children3.item(0).getNodeValue();
 				System.out.println(sentence3);
 
+				Answer answer2 = null;
+				if (father3.getAttribute("value").equals("false")) {
+					answer2 = new Answer(sentence2, true);
+				} else {
+					answer2 = new Answer(sentence2, false);
+				}
+				
 				// CHOICE 3
 
 				// We obtain the father node
@@ -119,6 +135,13 @@ public class Parser {
 				String sentence4 = children4.item(0).getNodeValue();
 				System.out.println(sentence4);
 
+				Answer answer3 = null;
+				if (father4.getAttribute("value").equals("false")) {
+					answer3 = new Answer(sentence2, true);
+				} else {
+					answer3 = new Answer(sentence2, false);
+				}
+				
 				// CHOICE 4
 
 				// We obtain the father node
@@ -129,6 +152,24 @@ public class Parser {
 				NodeList children5 = father5.getChildNodes();
 				String sentence5 = children5.item(0).getNodeValue();
 				System.out.println(sentence5);
+				
+				Answer answer4 = null;
+				if (father5.getAttribute("value").equals("false")) {
+					answer4 = new Answer(sentence2, true);
+				} else {
+					answer4 = new Answer(sentence2, false);
+				}
+				
+
+				// TO CREATE THE ATTRIBUTE "QUESTIONS"
+
+				 List<Answer> answers = new ArrayList<Answer>();
+				 answers.add(answer1);
+				 answers.add(answer2);
+				 answers.add(answer3);
+				 answers.add(answer4);
+				
+				 this.questions.add(new Question(sentence, answers));
 
 			}
 
@@ -138,10 +179,11 @@ public class Parser {
 				System.out.println("Getting into problem");
 
 				NodeList wording = node.getElementsByTagName("wording");
-				Element father = (Element)wording.item(0);
+				Element father = (Element) wording.item(0);
 				NodeList children = father.getChildNodes();
-				String sentence = children.item(0).getNodeValue();
-				System.out.println(sentence);
+				String sentence6 = children.item(0).getNodeValue();
+				System.out.println(sentence6);
+				this.questions.add(new Question(sentence6));
 
 			}
 

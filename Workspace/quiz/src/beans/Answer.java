@@ -30,6 +30,14 @@ public class Answer {
 	public void setFalse(boolean isFalse) {
 		this.isFalse = isFalse;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Answer [sentence=" + sentence + ", isFalse=" + isFalse + "]";
+	}
+	
+	
 	
 	
 	

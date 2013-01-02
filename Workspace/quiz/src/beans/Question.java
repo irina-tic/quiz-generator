@@ -6,13 +6,16 @@ public class Question {
 
 	private String wording;
 	private List<Answer> answers;
-	private int num;
 
-	public Question(String wording, List<Answer> answers, int num) {
+
+	public Question(String wording, List<Answer> answers) {
 		super();
 		this.wording = wording;
 		this.answers = answers;
-		this.num = num;
+	}
+	
+	public Question(String wording) {
+		this.wording = wording;
 	}
 
 	public String getWording() {
@@ -31,12 +34,5 @@ public class Question {
 		this.answers = answers;
 	}
 
-	public int getNum() {
-		return num;
-	}
-
-	public void setNum(int num) {
-		this.num = num;
-	}
 
 }
