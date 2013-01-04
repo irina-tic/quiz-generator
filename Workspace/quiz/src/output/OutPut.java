@@ -19,5 +19,11 @@ public class OutPut {
 		this.exams = exams;
 	}
 	
+	public void generateHTML(){
+		
+		
+		
+	}
+	
 	
 }

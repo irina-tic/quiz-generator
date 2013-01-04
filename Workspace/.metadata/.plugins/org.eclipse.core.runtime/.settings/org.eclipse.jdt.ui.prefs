@@ -1,4 +1,4 @@
-#Wed Jan 02 13:23:19 CET 2013
+#Fri Jan 04 20:35:08 CET 2013
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
@@ -17,5 +17,5 @@ org.eclipse.jdt.ui.formatterprofiles.version=12
 content_assist_number_of_computers=21
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="beans.Question"><rhs name\="beans.Question"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="beans.Answer"><rhs name\="beans.Answer"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="beans.Question"><rhs name\="beans.Question"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="beans.Answer"><rhs name\="beans.Answer"/></lhs><lhs name\="beans.Exam"><rhs name\="beans.Exam"/></lhs><lhs name\="java.util.Random"><rhs name\="java.util.Random"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

@@ -34,5 +34,12 @@ public class Question {
 		this.answers = answers;
 	}
 
+	@Override
+	public String toString() {
+		return "Question [wording=" + wording + ", answers=" + answers + "]";
+	}
+	
+	
+
 
 }

@@ -1,0 +1,47 @@
+package algorithm;
+
+import java.util.List;
+
+import beans.Exam;
+
+public class ExamGenerator {
+
+	private List<Exam> exams;
+	private Exam mainExam;
+	
+	
+	public ExamGenerator(Exam mainExam) {
+		this.mainExam = mainExam;
+		this.exams = doExams();
+	}
+
+
+
+
+	public List<Exam> getExams() {
+		return exams;
+	}
+
+
+	public void setExams(List<Exam> exams) {
+		this.exams = exams;
+	}
+
+
+	public Exam getMainExam() {
+		return mainExam;
+	}
+
+
+	public void setMainExam(Exam mainExam) {
+		this.mainExam = mainExam;
+	}
+	
+	
+	private List<Exam> doExams() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}
