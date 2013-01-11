@@ -1,0 +1,30 @@
+package test;
+
+import input.Parser;
+
+import javax.swing.JOptionPane;
+
+import output.OutPut;
+import algorithm.ExamGenerator;
+import beans.Exam;
+
+public class TestingParser {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Parser test = new Parser("D:\\XML_EntryFile.xml");
+		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
+		OutPut out = new OutPut(test2);
+		out.generateHTML();
+		try{
+			
+            Runtime.getRuntime().exec("C:\Users\DAVID\quiz\Workspace\quiz\reporte.html");
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null, ":\n" + e.getLocalizedMessage());
+        }
+	}
+
+}

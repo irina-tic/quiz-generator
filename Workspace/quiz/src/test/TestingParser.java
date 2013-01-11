@@ -1,10 +1,14 @@
 package test;
 
-import algorithm.ExamGenerator;
-import beans.Answer;
-import beans.Exam;
-import beans.Question;
+import java.io.IOException;
+
 import input.Parser;
+
+import javax.swing.JOptionPane;
+
+import output.OutPut;
+import algorithm.ExamGenerator;
+import beans.Exam;
 
 public class TestingParser {
 
@@ -15,10 +19,14 @@ public class TestingParser {
 		
 		Parser test = new Parser("D:\\XML_EntryFile.xml");
 		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
-		for(Exam e :test2.getExams()){
-		System.out.println(e.getQuestions());
-		}
-
+		OutPut out = new OutPut(test2);
+		out.generateHTML();
+		try{
+			
+            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\reporte.html");
+		} catch(IOException e1){
+			System.out.print(e1.toString());
+		} 
 	}
 
 }
