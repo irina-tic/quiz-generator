@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="53" version="2.0">
 <workbenchAdvisor/>
 <window height="760" maximized="true" width="1024" x="75" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -8,7 +8,7 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="339" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="160" y="22"/>
 <coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -17,13 +17,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="175" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -32,21 +32,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestingParser.java" partName="TestingParser.java" path="C:/Users/DAVID/quiz/Workspace/quiz/src/test/TestingParser.java" title="TestingParser.java" tooltip="quiz/src/test/TestingParser.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/quiz/src/test/TestingParser.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="725" selectionTopPixel="130"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OutPut.java" partName="OutPut.java" path="C:/Users/DAVID/quiz/Workspace/quiz/src/output/OutPut.java" title="OutPut.java" tooltip="quiz/src/output/OutPut.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/quiz/src/output/OutPut.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2016" selectionTopPixel="827"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
@@ -121,7 +110,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
@@ -274,92 +263,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/quiz/src/test/TestingParser.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/quiz/src/output/OutPut.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/quiz/src/beans/Exam.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/quiz/src/beans/Answer.java"/>
-</editors>
-<item historyLabel="TestingParser.java" index="0">
-<position/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="985" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1239" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1290" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1323" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1420" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1420" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1794" y="0"/>
-</item>
-<item historyLabel="Exam.java" index="2">
-<position info="not_deleted" x="233" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="413" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1997" y="0"/>
-</item>
-<item historyLabel="Answer.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1997" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1793" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="1886" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="13" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="2051" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="OutPut.java" index="1">
-<position info="not_deleted" x="2016" y="0"/>
-</item>
-<item historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item active="true" historyLabel="TestingParser.java" index="0">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -378,26 +282,26 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Answer.java" tooltip="quiz/src/beans/Answer.java">
-<persistable path="/quiz/src/beans/Answer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Exam.java" tooltip="quiz/src/beans/Exam.java">
-<persistable path="/quiz/src/beans/Exam.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OutPut.java" tooltip="quiz/src/output/OutPut.java">
-<persistable path="/quiz/src/output/OutPut.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" tooltip="quiz/src/input/Parser.java">
+<persistable path="/quiz/src/input/Parser.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestingParser.java" tooltip="quiz/src/test/TestingParser.java">
 <persistable path="/quiz/src/test/TestingParser.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Question.java" tooltip="quiz/src/beans/Question.java">
-<persistable path="/quiz/src/beans/Question.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" tooltip="quiz/src/input/Parser.java">
-<persistable path="/quiz/src/input/Parser.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExamGenerator.java" tooltip="quiz/src/algorithm/ExamGenerator.java">
 <persistable path="/quiz/src/algorithm/ExamGenerator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OutPut.java" tooltip="quiz/src/output/OutPut.java">
+<persistable path="/quiz/src/output/OutPut.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Exam.java" tooltip="quiz/src/beans/Exam.java">
+<persistable path="/quiz/src/beans/Exam.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Answer.java" tooltip="quiz/src/beans/Answer.java">
+<persistable path="/quiz/src/beans/Answer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Question.java" tooltip="quiz/src/beans/Question.java">
+<persistable path="/quiz/src/beans/Question.java"/>
 </file>
 </mruList>
 </workbench>

@@ -95,8 +95,6 @@ public class OutPut {
 
 					escritura.println("<h2>" + aux.getWording() + "</h2>");
 					if (aux.getAnswers() != null) {
-//						Random ran = new Random();
-//						Collections.shuffle(aux.getAnswers(),ran);
 						for (Answer ans : aux.getAnswers()) {
 							if(ans.isFalse()==false){
 								escritura.println("<p><ins>" + ans.getSentence() + "</ins></p>");	
