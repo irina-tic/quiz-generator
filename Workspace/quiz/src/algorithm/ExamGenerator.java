@@ -3,8 +3,8 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
+import beans.Answer;
 import beans.Exam;
 import beans.Question;
 
@@ -46,10 +46,20 @@ public class ExamGenerator {
 
 		// Starting to random order
 		for (int i = 0; i < numExam; i++) {
+			
 
 			// Creating the new Question list with different order
-			
 			Collections.shuffle(mainList);
+			
+			
+			for(Question e : mainList){
+				List<Answer> answers = e.getAnswers();
+				
+				
+				if(e.getAnswers()!=null)
+				Collections.shuffle(answers);
+			}
+			
 			List<Question> list = new ArrayList<>();
 			list.addAll(mainList);
 
