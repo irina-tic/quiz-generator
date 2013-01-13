@@ -119,9 +119,9 @@ public class Parser {
 
 				Answer answer2 = null;
 				if (father3.getAttribute("value").equals("false")) {
-					answer2 = new Answer(sentence2, true);
+					answer2 = new Answer(sentence3, true);
 				} else {
-					answer2 = new Answer(sentence2, false);
+					answer2 = new Answer(sentence3, false);
 				}
 				
 				// CHOICE 3
@@ -137,9 +137,9 @@ public class Parser {
 
 				Answer answer3 = null;
 				if (father4.getAttribute("value").equals("false")) {
-					answer3 = new Answer(sentence2, true);
+					answer3 = new Answer(sentence4, true);
 				} else {
-					answer3 = new Answer(sentence2, false);
+					answer3 = new Answer(sentence4, false);
 				}
 				
 				// CHOICE 4
@@ -155,9 +155,9 @@ public class Parser {
 				
 				Answer answer4 = null;
 				if (father5.getAttribute("value").equals("false")) {
-					answer4 = new Answer(sentence2, true);
+					answer4 = new Answer(sentence5, true);
 				} else {
-					answer4 = new Answer(sentence2, false);
+					answer4 = new Answer(sentence5, false);
 				}
 				
 

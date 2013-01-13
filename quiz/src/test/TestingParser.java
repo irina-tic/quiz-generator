@@ -17,13 +17,18 @@ public class TestingParser {
 	 */
 	public static void main(String[] args) {
 		
-		Parser test = new Parser("D:\\XML_EntryFile.xml");
+		Parser test = new Parser("C:\\XML_EntryFile.xml");
 		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
 		OutPut out = new OutPut(test2);
+
 		out.generateHTML();
+		out.generateHTML2();
+
 		try{
 			
-            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\reporte.html");
+            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\Salva\\Workspace\\ACSE\\reporte.html");
+            Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\Salva\\Workspace\\ACSE\\reporte2.html");
+
 		} catch(IOException e1){
 			System.out.print(e1.toString());
 		} 
