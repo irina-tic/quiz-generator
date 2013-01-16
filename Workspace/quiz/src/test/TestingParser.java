@@ -16,18 +16,39 @@ public class TestingParser {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		Parser test = new Parser("D:\\XML_EntryFile.xml");
-		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
-		OutPut out = new OutPut(test2);
-		out.generateHTML();
-		try{
-			
-            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\student.html");
-            Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\teacher.html");
-		} catch(IOException e1){
-			System.out.print(e1.toString());
-		} 
+
+		Parser test = null;
+	    //verifying if the argument vector is empty
+		if(0>args.length){
+			//if no argument: print message + exit
+			System.out.println("No arguments");
+			System.exit(1);
+		}
+
+		//going through the argument vector
+		for (int i = 0; i < args.length; i++)
+		{
+
+			//initializing test with elemnts of the vector
+			test = new Parser(args[i]);
+			ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
+			OutPut out = new OutPut(test2);
+            //creating exams file for subject i
+			String t = "reporte_"+i+".html";
+            //creating exam answers file for subject i
+			String t1 = "reportea_"+i+".html";
+            //calling the method to generate the 2 files
+			out.generateHTML(t,t1);
+			try{
+				//html file for students
+				Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe reportea_"+i+".html");
+				//html file for teachers
+				Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe reporte_"+i+".html");
+			} catch(IOException e1){
+				System.out.print(e1.toString());
+			} 
+
+		}
 	}
 
 }

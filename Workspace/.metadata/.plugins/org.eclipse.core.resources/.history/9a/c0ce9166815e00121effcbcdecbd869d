@@ -1,0 +1,63 @@
+package test;
+
+import java.io.IOException;
+
+import input.Parser;
+
+import javax.swing.JOptionPane;
+
+import output.OutPut;
+import algorithm.ExamGenerator;
+import beans.Exam;
+
+public class TestingParser {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Parser test = null;
+		if(0>args.length){
+			System.out.println("No arguments");
+			System.exit(1);
+		}
+
+		for (int i = 0; i < args.length; i++)
+		{
+		//test = new Parser(args[i]);
+			if(i==0)
+				test = new Parser("C://Program Files//Java//jdk1.7.0_10//bin//Workspace//quiz//XML_EntryFile_english.xml");
+			else
+				if(i==1)
+					test = new Parser("C:\\Program Files\\Java\\jdk1.7.0_10\\bin\\Workspace\\quiz\\XML_EntryFile_german.xml");
+				else
+					if(i==2)
+						test = new Parser("C:\\Program Files\\Java\\jdk1.7.0_10\\bin\\Workspace\\quiz\\XML_EntryFile_romanian.xml");
+		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
+		OutPut out = new OutPut(test2);
+		
+		String s = "file:///C://Program%20Files//Java//jdk1.7.0_10//bin//Workspace//quiz//reporte_"+i+".html";
+		String t = "reporte_"+i+".html";
+		
+		String s1 = "file:///C://Program%20Files//Java//jdk1.7.0_10//bin//Workspace//quiz//reportea_"+i+".html";
+		String t1 = "reportea_"+i+".html";
+        System.out.println("test0:"+i);
+		out.generateHTML(t);
+		out.generateHTML2(t1);
+         System.out.println("test1:"+i);
+		try{
+
+            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"file:///C://Program%20Files//Java//jdk1.7.0_10//bin//Workspace//quiz//reporte_"+i+".html");
+            Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"file:///C://Program%20Files//Java//jdk1.7.0_10//bin//Workspace//quiz//reportea_"+i+".html");
+            System.out.println("test2:"+i);
+
+		} catch(IOException e1){
+			System.out.print(e1.toString());
+			System.out.println("test3:"+i);
+		}
+		}
+		System.out.println("test4:");
+	}
+
+}

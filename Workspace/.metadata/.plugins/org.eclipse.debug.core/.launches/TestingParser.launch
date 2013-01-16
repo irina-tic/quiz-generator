@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="test.TestingParser"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;C:\\Program Files\\Java\\jdk1.7.0_10\\bin\\Workspace\\quiz\\XML_EntryFile_english.xml&quot;&#13;&#10;&quot;C:\\Program Files\\Java\\jdk1.7.0_10\\bin\\Workspace\\quiz\\XML_EntryFile_german.xml&quot;&#13;&#10;&quot;C:\\Program Files\\Java\\jdk1.7.0_10\\bin\\Workspace\\quiz\\XML_EntryFile_romanian.xml&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="quiz"/>
 </launchConfiguration>

@@ -1,0 +1,12 @@
+package algorithm;
+
+import java.util.List;
+
+import beans.Exam;
+
+public class ExamGenerator {
+
+	private List<Exam> exams;
+	private Exam mainExam;
+	
+}

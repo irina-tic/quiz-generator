@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<exam>
+    <question type = "multiple-choice">
+	<wording>
+	A paradigm is:
+	</wording>
+    <answer value="true">category of entities that share a common characteristic</answer>
+	<answer value="false">a way to solve disputes</answer>
+	<answer value="false">Greek word meaning Strategy</answer>
+	<answer value="false">True Answer</answer>
+	</question>
+	
+	<question type = "multiple-choice">
+	<wording>
+	Software design paradigm can be subdivided as:
+	</wording>
+    <answer value="false">Design Patterns</answer>
+	<answer value="false">Components</answer>
+	<answer value="false">Idioms</answer>
+	<answer value="true">Software Architecture</answer>
+	</question>
+	
+	<question type = "problem">
+	<wording>
+	Give the definition of the programming language.
+	</wording>
+	</question>
+
+	<question type = "multiple-choice">
+	<wording>
+	Software lifecycles include:
+	</wording>
+    <answer value="false">Build and Fix Model</answer>
+	<answer value="true">Waterfall and Modified Waterfall model</answer>
+	<answer value="false">Changing and Prototyping</answer>
+	<answer value="true">Bohem's spiral method</answer>
+	</question>
+
+<question type = "multiple-choice">
+	<wording>
+	Any imperative program consists of:
+	</wording>
+    <answer value="false">Declarative statements</answer>
+	<answer value="true">Imperative statements</answer>
+	<answer value="false">Program flow control statements</answer>
+	<answer value="false">Variables</answer>
+	</question>
+
+<question type = "multiple-choice">
+	<wording>
+	A particular mechanism for storing and managing objects depends on the type of objects, as well as the number of created objects. Very often, we store objects in:    
+	</wording>
+    <answer value="true">Arrays</answer>
+	<answer value="false">Collections</answer>
+	<answer value="false">Trees</answer>
+	<answer value="false">Stacks</answer>
+	</question>
+
+</exam>

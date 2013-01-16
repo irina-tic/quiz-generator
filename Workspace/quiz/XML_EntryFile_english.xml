@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<exam>
+    <question type = "multiple-choice">
+	<wording>
+	Fill in the blanks: We .... home.
+	</wording>
+    <answer value="false">be</answer>
+	<answer value="false">was</answer>
+	<answer value="false">gone</answer>
+	<answer value="true">go</answer>
+	</question>
+	
+	<question type = "multiple-choice">
+	<wording>
+	Fill in the blanks: Today ... snow.
+	</wording>
+    <answer value="false">has</answer>
+	<answer value="false">had</answer>
+	<answer value="false">isn't</answer>
+	<answer value="true">will</answer>
+	</question>
+	
+	<question type = "problem">
+	<wording>
+	Describe your favourite animal!
+	</wording>
+	</question>
+	.
+	.
+	.
+	.
+	
+</exam>

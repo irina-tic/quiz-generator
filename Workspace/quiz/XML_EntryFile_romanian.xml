@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<exam>
+    <question type = "multiple-choice">
+	<wording>
+	Inlocuiti corect: Astazi ... in plimbare prin parc.
+	</wording>
+    <answer value="true">am fost</answer>
+	<answer value="false">am</answer>
+	<answer value="false">am cautat</answer>
+	<answer value="false">a fost</answer>
+	</question>
+	
+	<question type = "multiple-choice">
+	<wording>
+	Inlocuiti corect: Maine ... pretutindeni in tara.
+	</wording>
+    <answer value="false">a ninge</answer>
+	<answer value="true">ninge</answer>
+	<answer value="false">am nins</answer>
+	<answer value="false">au nins</answer>
+	</question>
+	
+	<question type = "problem">
+	<wording>
+	Descrie obiectul tau preferat.
+	</wording>
+	</question>
+	
+	
+</exam>

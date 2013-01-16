@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 7 elements from project &apos;BinaryTree&apos;&#x0D;&#x0A;- Original project: &apos;BinaryTree&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MiniProject&#x0D;&#x0A;     ~$sson01.doc&#x0D;&#x0A;     Java control&amp;initialization.txt&#x0D;&#x0A;     Java objects&amp;operators.txt&#x0D;&#x0A;     lesson01.doc&#x0D;&#x0A;     MiniProject_Irina_Talmaciu.zip&#x0D;&#x0A;     Questions Lesson 1.pdf" description="Delete elements" element1="Java objects&amp;operators.txt" element2="Java control&amp;initialization.txt" element3="Questions Lesson 1.pdf" element4="~$sson01.doc" element5="lesson01.doc" element6="MiniProject_Irina_Talmaciu.zip" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1358333438813" subPackages="false" version="1.0"/>
+</session>

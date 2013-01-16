@@ -1,0 +1,45 @@
+package test;
+
+import java.io.IOException;
+
+import input.Parser;
+
+import javax.swing.JOptionPane;
+
+import output.OutPut;
+import algorithm.ExamGenerator;
+import beans.Exam;
+
+public class TestingParser {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Parser test = null;
+		if(0>args.length){
+			System.out.println("No arguments");
+			System.exit(1);
+		}
+		
+		for (int i = 0; i < args.length; i++)
+		{
+
+			System.out.println("args.length:"+args.length);
+
+			test = new Parser(args[i]);
+		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
+		OutPut out = new OutPut(test2);
+		out.generateHTML();
+		try{
+			
+            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\Teodora\\workspace\\quiz\\student.html");
+            Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\Teodora\\workspace\\quiz\\teacher.html");
+		} catch(IOException e1){
+			System.out.print(e1.toString());
+		} 
+		}
+	}
+
+}

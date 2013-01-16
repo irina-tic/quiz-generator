@@ -1,0 +1,14 @@
+package beans;
+
+public class Question {
+	private List<Answer> answers;
+	private int num;
+	
+	
+	public Question(List<Answer> answers, int num) {
+		super();
+		this.answers = answers;
+		this.num = num;
+	}
+
+}

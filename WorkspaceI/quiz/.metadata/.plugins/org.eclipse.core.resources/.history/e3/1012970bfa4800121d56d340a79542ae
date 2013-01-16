@@ -1,0 +1,38 @@
+package beans;
+
+import java.util.List;
+
+public class Question {
+	private List<Answer> answers;
+	private int num;
+	
+	
+	public Question(List<Answer> answers, int num) {
+		super();
+		this.answers = answers;
+		this.num = num;
+	}
+
+
+	public List<Answer> getAnswers() {
+		return answers;
+	}
+
+
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
+	}
+
+
+	public int getNum() {
+		return num;
+	}
+
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+	
+
+}

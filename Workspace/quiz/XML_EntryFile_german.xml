@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<exam>
+    <question type = "multiple-choice">
+	<wording>
+	Fuehlen Sie mit dem richtigen Wort ein: Heute ... es viel schneien.
+	</wording>
+    <answer value="false">hat</answer>
+	<answer value="true">wird</answer>
+	<answer value="false">ist</answer>
+	<answer value="false">hatte</answer>
+	</question>
+	
+	<question type = "multiple-choice">
+	<wording>
+	Fuehlen Sie mit dem richtigen Wort ein: Im Zimmer ... ein Tannenbaum.
+	</wording>
+    <answer value="true">befindet sich</answer>
+	<answer value="false">gibt</answer>
+	<answer value="false">hat</answer>
+	<answer value="false">ist gewachsen</answer>
+	</question>
+	
+	<question type = "problem">
+	<wording>
+	Beschreiben sie eins von ihnen bevorzugtest Objekt!
+	</wording>
+	</question>
+    .
+	.
+	.
+	.
+	
+</exam>

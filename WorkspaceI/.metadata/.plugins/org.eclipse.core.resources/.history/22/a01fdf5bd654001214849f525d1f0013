@@ -1,0 +1,8 @@
+package algorithm;
+
+import beans.Exam;
+
+public class ExamGenerator {
+
+	private Exam exams;
+}

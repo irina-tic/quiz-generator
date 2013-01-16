@@ -1,0 +1,32 @@
+package test;
+
+import java.io.IOException;
+
+import input.Parser;
+
+import javax.swing.JOptionPane;
+
+import output.OutPut;
+import algorithm.ExamGenerator;
+import beans.Exam;
+
+public class TestingParser {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Parser test = new Parser("H:\\XML_EntryFile.xml");
+		ExamGenerator test2 = new ExamGenerator(new Exam(test.getQuestions()), 6);
+		OutPut out = new OutPut(test2);
+		out.generateHTML();
+		try{
+			
+            Process p = Runtime.getRuntime().exec("C:\\Program\Files\(x86)\\Opera\\opera.exe"+"H:\\master2012-2013\\Advanced_concepts_in_SE\\Proiect\\David\\Workspace\\quiz\\reporte.html");
+		} catch(IOException e1){
+			System.out.print(e1.toString());
+		} 
+	}
+
+}
