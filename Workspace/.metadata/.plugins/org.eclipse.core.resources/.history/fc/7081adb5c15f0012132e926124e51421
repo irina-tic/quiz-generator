@@ -84,7 +84,7 @@ public class OutPut {
 				escritura2.println(" </header>");
 				escritura2.println(" <div>");
 				escritura2.println(" <nav>");
-				i++;
+				
 				
 				
 				

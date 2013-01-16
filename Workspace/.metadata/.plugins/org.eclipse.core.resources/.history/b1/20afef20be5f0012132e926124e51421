@@ -23,8 +23,7 @@ public class TestingParser {
 		out.generateHTML();
 		try{
 			
-            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\student.html");
-            Process p2 = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\teacher.html");
+            Process p = Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe "+"C:\\Users\\DAVID\\quiz\\Workspace\\quiz\\reporte.html");
 		} catch(IOException e1){
 			System.out.print(e1.toString());
 		} 

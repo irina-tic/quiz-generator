@@ -40,7 +40,7 @@ public class OutPut {
 
 			FileWriter archivo2 = new FileWriter("teacher.html");
 
-			PrintWriter escritura2 = new PrintWriter(archivo2);
+			PrintWriter escritura2 = new PrintWriter(archivo);
 			
 			
 
@@ -84,7 +84,7 @@ public class OutPut {
 				escritura2.println(" </header>");
 				escritura2.println(" <div>");
 				escritura2.println(" <nav>");
-				i++;
+				
 				
 				
 				
